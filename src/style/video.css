@@ -1,0 +1,61 @@
+/* Style the video: 100% width and height to cover the entire window */
+#video-container {
+    position: relative;
+    width: 100%;
+  }
+#myVideo {
+    position: fixed;
+    right: 0;
+    width: 100%;
+    top: -80px;
+    
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    display: none;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+@media only screen and (max-width: 600px) {
+    /* Aturan CSS khusus untuk perangkat dengan lebar layar maksimum 600px di sini */
+#myVideo {
+  position: fixed;
+  right: 0;
+  width: 100%;
+  top: 250px;
+}
+#video-container {
+  position: relative;
+  width: 100%;
+}
+}
